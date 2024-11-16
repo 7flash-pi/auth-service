@@ -48,6 +48,7 @@ public class userRegisterService {
             user.setPassword(userData.get().getPassword());
             user.setUpdatedAt(LocalDateTime.now());
             user.setNewUser(userData.get().isNewUser());
+            user.setIsActive(userData.get().isIsActive());
             
             return Optional.of(userRegisterRepository.save(user));
         }
