@@ -10,7 +10,8 @@ import com.auth_service.auth_service.models.userRegisterModel;
 import com.auth_service.auth_service.repositories.userRegisterRepository;
 
 @Service
-public class userRegisterService {
+public class UserRegisterService {
+    
 
     @Autowired
     private userRegisterRepository userRegisterRepository;

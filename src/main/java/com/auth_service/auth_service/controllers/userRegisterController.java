@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.auth_service.auth_service.models.ApiResponse;
 import com.auth_service.auth_service.models.userRegisterModel;
-import com.auth_service.auth_service.services.userRegisterService;
+import com.auth_service.auth_service.services.UserRegisterService;
 
 @RestController
 @RequestMapping("/user")
@@ -23,7 +23,7 @@ import com.auth_service.auth_service.services.userRegisterService;
 public class userRegisterController {
 
     @Autowired
-    private userRegisterService userRegisterService;
+    private UserRegisterService userRegisterService;
 
     @PostMapping("/register")
     public ResponseEntity<ApiResponse<userRegisterModel>> registerUser(@RequestBody userRegisterModel user) {
